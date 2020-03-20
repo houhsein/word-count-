@@ -32,22 +32,18 @@ def wc(input_file):
 
 
 def _line_show(option):
-    #nonlocal line_count
     if option:
         print("行數:", line_count)
 
 def _word_show(option):
-    #nonlocal word_count
     if option:
         print("字數:", word_count)
 
 def _char_show(option):
-    #nonlocal char_count
     if option:
         print("字元數:", char_count)
 
 def _long_show(option):
-    #nonlocal long_count
     if option:
         print("最長行的長度:", long_line)
 
