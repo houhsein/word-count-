@@ -22,7 +22,7 @@ def wc(input_file):
             char_count += len(line)
             if len(line) > long_line:
                 long_line = len(line)
-
+# 利用字典建立個別功能，並由參數判斷來是否執行
         _result_dic = {'line': _line_show,
                        'word': _word_show,
                        'char': _char_show,
@@ -74,6 +74,7 @@ def main():
         result['word'](True)
         result['char'](True)
     else:
+        # 由參數判斷來是否執行，若為true則執行
         result['line'](args.line)
         result['word'](args.word)
         result['char'](args.char)
